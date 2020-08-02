@@ -1,3 +1,25 @@
+# ToC
+* [About](#about)
+  + [Goals](#goals)
+  + [Notes](#notes)
+  + [TODO](#todo)
+  + [Advantages][#advantages]
+  + [Disadvantages][#disadvantages]
+  + [Tested with](#tested-with)
+* [Syntax](#syntax)
+  + [Title page (optional)](#title-page-optional)
+  + [Dramatis personae](#dramatis-personae)
+    - [Sections](#sections)
+  + [Premiere cast (optional)](#premiere-cast-optional)
+  + [Outline (optional)](#outline-optional)
+  + [Sections](#sections-1)
+  + [Character, dialogue](#character-dialogue)
+  + [Stage directions](#stage-directions)
+    - [Inline](#inline)
+    - [Separate](#separate)
+  + [Songs](#songs)
+* [License](#license)
+
 # About
 * Inspired by https://fountain.io and Markdown
 
