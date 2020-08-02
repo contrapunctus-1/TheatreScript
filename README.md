@@ -236,8 +236,9 @@ There are no capitals in Devanagari, so you must use the colon style.
 आलोक:
 तू चुप कर यार!
 ```
+
 ### Multi-line dialogues
-Once a character has been specified, we want it to apply to all following lines, until the next character is specified. But it's difficult to do without the colon.
+Once a character has been specified, we want it to apply to all following lines, until the next character is specified. In most cases, I expect this to work. An example -
 
 ```
 KING (listening)
@@ -253,6 +254,9 @@ I will draw back into the shade and wait for them. (He stands, gazing toward the
 FIRST FRIEND
 It seems to me, dear, that Father Kanva cares more for the hermitage trees than he does for you. You are delicate as a jasmine blossom, yet he tells you to fill the trenches about the trees.
 ```
+
+But what if a character's dialogue happens to coincide with the syntax of a character name?
+* A hacky workaround could be to start that dialogue with a single space.
 
 ## Stage directions
 Anything in parenthesis is displayed as stage directions.
