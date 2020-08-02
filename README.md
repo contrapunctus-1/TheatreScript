@@ -8,7 +8,7 @@
 * [Syntax](#syntax)
   + [Title page (optional)](#title-page-optional)
   + [Dramatis personae](#dramatis-personae)
-    - [Sections](#sections)
+    - [Character groups](#character-groups)
   + [Premiere cast (optional)](#premiere-cast-optional)
   + [Outline (optional)](#outline-optional)
   + [Sections](#sections-1)
@@ -108,7 +108,7 @@ You may want to use square brackets everywhere, then, for consistency...
 [पड़ोसन २]
 ```
 
-### Sections
+### Character groups
 
 ## Premiere cast (optional)
 Actor: character 1, character 2
