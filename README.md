@@ -71,10 +71,12 @@
 ## TODO
 1. Dramatis personae - differentiate between just a character name (e.g. "Captain Horster") and a description line with no character name (e.g. "Men of various conditions and occupations, a few women, and a troop of schoolboys--the audience at a public meeting.")
    * it's possible with capitals in Latin ("CAPTAIN HORSTER" is a character name, the other line doesn't have capital words, so is just a description)...
-   * ...but not an option in Devanagari 🤔
-2. title, dramatis personae, act, scene, song -  syntax for introducing these sections, and m17n for their keywords
+   * ...but that's not an option in Devanagari 🤔
+2. Title, dramatis personae, act, scene, song -  syntax for introducing these sections
+   + and m17n for their keywords
 3. Headings?
-4. [x] Do we need Fountain's Dual Dialogue?
+4. Verse dramas
+5. [x] Do we need Fountain's Dual Dialogue?
    * I see it as limited - just two simultaneous speakers?
    * It also seems unnecessary - could just write "Both:" or "The three of them:" or "Foo, Bar and Quux:" 🤷‍♀
 
