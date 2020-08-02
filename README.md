@@ -44,7 +44,7 @@
 1. Can be read, edited, and written by non-technical users
 2. No special editor required
 3. Intended to support keywords in all languages (unlike Fountain)
-4. Don't need to specify language in multi-script texts (damnit, LaTeX/XeLaTeX 😠)
+4. Don't need to specify language in multi-script texts (dammit, LaTeX/XeLaTeX 🙄)
 
 ## Disadvantages
 1. Can't define character name once to easily update all uses of it (unlike LaTeX+Thalie)
@@ -55,7 +55,7 @@
 * Line breaks preserved (like Fountain, unlike Markdown)
 * Soft-wrapping recommended.
 * Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a real problem, square brackets may be a viable alternative.
-* Have seen another style, which looks like this. Not a fan of the use of periods for delimiting character names, but it's an example of an alternative.
+* As an example of an alternative, this is the plain text style I've seen most often. Not a fan of the use of periods for delimiting character names.
   ```
   [Enter Jack.]
 
