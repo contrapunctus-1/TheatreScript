@@ -37,6 +37,7 @@
 2. Reuse existing conventions
 3. Must support Devanagari
 4. Design syntax to be forgiving of the writer's errors
+5. Minimize user effort and editing software requirements
 
 ## Advantages
 1. Can be read, edited, and written by non-technical users
