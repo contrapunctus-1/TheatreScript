@@ -92,11 +92,14 @@ Key: Value
 Key with spaces: Value
 ```
 ## Dramatis personae
-1. if there is no comma, parenthesis, consecutive uppercase words, or square brackets, the whole line is the character name
-2. if there is a comma or parenthesis, the text before the first comma/opening parenthesis is the character name
-3. use square brackets or uppercase to override that
 
-The character name is emphasized; the rest is displayed as a description.
+### Characters
+1. If there are `[square brackets]`, the text in the left-most pair is the character name
+2. Failing that, if there are `CONSECUTIVE UPPERCASE WORDS`, the left-most set is the character name
+3. Failing that, if there is a comma or parenthesis, the text before the left-most comma or opening parenthesis is the character name
+4. Failing that, there is no character name; the whole line is the the character _description_
+
+The character name is emphasized to stand out from the description.
 
 ```Latin
 ALOK SHARMA, a boy studying in class 11
