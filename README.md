@@ -1,10 +1,9 @@
-# ToC
 * [About](#about)
   + [Goals](#goals)
   + [Notes](#notes)
   + [TODO](#todo)
-  + [Advantages][#advantages]
-  + [Disadvantages][#disadvantages]
+  + [Advantages](#advantages)
+  + [Disadvantages](#disadvantages)
   + [Tested with](#tested-with)
 * [Syntax](#syntax)
   + [Title page (optional)](#title-page-optional)
