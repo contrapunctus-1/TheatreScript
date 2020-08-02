@@ -43,7 +43,7 @@
 * Line breaks preserved (like Fountain, unlike Markdown)
 * Soft-wrapping recommended.
 * Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a real problem, square brackets may be a viable alternative.
-* Have seen another style, which looks like this -
+* Have seen another style, which looks like this. Not a fan of the use of periods for delimiting character names, but it's an example of an alternative.
   ```
   [Enter Jack.]
 
@@ -55,7 +55,6 @@
 
   Algernon.  [Stiffly.]  I believe it is customary in good society to take some slight refreshment at five o'clock.  Where have you been since last Thursday?
   ```
-  Not a fan of using periods for delimiting character names, but it's an example of an alternative.
 
 ## TODO
 1. Dramatis personae - differentiate between just a character name (e.g. "Captain Horster") and a description line with no character name (e.g. "Men of various conditions and occupations, a few women, and a troop of schoolboys--the audience at a public meeting.")
