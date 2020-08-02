@@ -28,6 +28,17 @@
 * Must support Devanagari
 * Design syntax to be forgiving of the writer's errors
 
+## Advantages
+* Can be read, edited, and written by non-technical users
+* No special editor required
+* Intended to support keywords in all languages (unlike Fountain)
+* Don't need to specify language in multi-script texts (damnit, LaTeX/XeLaTeX 😠)
+
+## Disadvantages
+* Can't define character name once to easily update all uses of it (unlike LaTeX+Thalie)
+* Not user-extensible (unlike LaTeX+Thalie)
+* no-syntax markup + m17n for keywords = more complexity for the compiler (unlike Fountain)
+
 ## Notes
 * Line breaks preserved (like Fountain, unlike Markdown)
 * Soft-wrapping recommended.
@@ -55,14 +66,6 @@
 4. [x] Do we need Fountain's Dual Dialogue?
    * I see it as limited - just two simultaneous speakers?
    * It also seems unnecessary - could just write "Both:" or "The three of them:" or "Foo, Bar and Quux:" 🤷‍♀
-
-## Advantages
-* Can be read, edited, and written by anyone
-* No special editor required
-
-## Disadvantages
-* Can't define character name once and change it everywhere (unlike LaTeX+Thalie)
-* (compared to Fountain) 'no-syntax markup' + m17n for keywords = more complexity for the compiler
 
 ## Tested with
 1. <https://en.wikisource.org/wiki/An_Enemy_of_the_People_(Ibsen)>
