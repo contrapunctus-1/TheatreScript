@@ -163,6 +163,15 @@ I happened to be passing, and so—(looks into the dining-room). But you have co
 ```
 ## Songs
 
+## Formatting
+```
+*italic*
+**bold**
+***bold italic***
+_underline_
+~strikethrough~
+```
+
 # License
 I dream of a world where all software is liberated - transparent, trustable, and accessible for anyone to use or improve. But I don't want to make demands or threats (e.g. via legal conditions) to get there.
 
