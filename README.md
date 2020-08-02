@@ -79,6 +79,13 @@
 2. https://www.gutenberg.org/cache/epub/844/pg844.txt
 
 # Syntax
+## Headings
+Markdown's ATX headings. A line starting with one to seven # characters, followed by one or more whitespace characters, followed by at least one alphanumeric character, is a heading.
+```
+# a heading
+## another heading
+```
+
 ## Title page (optional)
 ```
 Key: Value
