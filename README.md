@@ -86,7 +86,7 @@ Key with spaces: Value
 ```
 ## Dramatis personae
 1. if there is no comma, parenthesis, consecutive uppercase words, or square brackets, the whole line is the character name
-2. if there is a comma or parenthesis, the text behind the first comma/opening parenthesis is the character name
+2. if there is a comma or parenthesis, the text before the first comma/opening parenthesis is the character name
 3. use square brackets or uppercase to override that
 
 The character name is emphasized; the rest is displayed as a description.
