@@ -20,8 +20,9 @@
     - [Dialogues](#dialogues)
         - [Multi-line dialogues](#multi-line-dialogues)
     - [Stage directions](#stage-directions)
-        - [Inline](#inline)
-        - [Separate](#separate)
+        - [After the character name](#after-the-character-name)
+        - [In the dialogue](#in-the-dialogue)
+        - [Freestanding](#freestanding)
     - [Verse](#verse)
     - [Songs](#songs)
     - [Formatting](#formatting)
@@ -225,8 +226,18 @@ It seems to me, dear, that Father Kanva cares more for the hermitage trees than 
 ```
 
 ## Stage directions
-Anything in parenthesis
-### Inline
+Anything in parenthesis is displayed as stage directions.
+### After the character name
+```Latin
+PETRA (lifting her glass)
+Your health, father!
+```
+If using a colon, it comes last -
+```Latin
+PETRA (lifting her glass):
+Your health, father!
+```
+### In the dialogue
 ```Latin
 PETER STOCKMANN
 I happened to be passing, and so—(looks into the dining-room). But you have company with you, I see.
@@ -235,7 +246,7 @@ I happened to be passing, and so—(looks into the dining-room). But you have co
 धोबन:
 अरे, दरवाज़ा तो खुला है—(कपड़ों की गठरी उठाए अंदर आती है) भाभीजी? भाभीजी, कहाँ हो? अच्छा, आप यहाँ पर हो। (कपड़े मेज़ पर रखती है) क्या हुआ भाभीजी?
 ```
-### Separate
+### Freestanding
 ```Latin
 (SCENE.—DR. STOCKMANN'S sitting-room. It is evening. The room is plainly but neatly appointed and furnished.)
 ```
