@@ -17,7 +17,8 @@
     - [Premiere cast (optional)](#premiere-cast-optional)
     - [Outline (optional)](#outline-optional)
     - [Sections](#sections)
-    - [Character, dialogue](#character-dialogue)
+    - [Character name and dialogue](#character-name-and-dialogue)
+        - [Multi-line dialogues](#multi-line-dialogues)
     - [Stage directions](#stage-directions)
         - [Inline](#inline)
         - [Separate](#separate)
@@ -138,25 +139,125 @@ Actor: character 1, character 2
 ## Sections
 Act, scene
 
-## Character, dialogue
-```Latin
-ALOK
-Leave me alone, Mom.
+## Character name and dialogue
+There are three styles -
+1. No colon - character name is all-caps, with a blank line before it, and the dialogue starting in the next line
 
-ALOK: Leave me alone, Mom.
+   ```Latin
+   BILLING
+   Hovstad, don't you think the town ought to give Dr. Stockmann some sort of testimonial?
 
-ALOK:
-Leave me alone, Mom.
-```
-No capitals in Devanagari, so you must use colons.
+   HOVSTAD
+   I will suggest it, anyway.
+
+   BILLING
+   And I will speak to Aslaksen about it.
+
+   DR. STOCKMANN
+   No, my good friends, don't let us have any of that nonsense. I won't hear anything of the kind. And if the Baths Committee should think of voting me an increase of salary, I will not accept it. Do you hear, Katherine?—I won't accept it.
+
+   MRS. STOCKMANN
+   You are quite right, Thomas.
+   ```
+2. Colon, inline - character name is followed by a colon and one or more whitespace characters, followed by the dialogue on the same line. Making character name all-caps is optional.
+   * This is more compressed, but that can work against it - actors are frequently writing notes in their printed copies, so that extra space is useful!
+   * Note - doesn't look good with long soft-wrapped lines, unless your editor supports soft-wrapping + soft-indenting them
+   ```Latin
+   BILLING:			Hovstad, don't you think the town ought to give Dr. Stockmann some sort of testimonial?
+   HOVSTAD:			I will suggest it, anyway.
+   BILLING:			And I will speak to Aslaksen about it.
+   DR. STOCKMANN:	No, my good friends, don't let us have any of that nonsense. I won't hear anything of the kind. And if the Baths Committee should think of voting me an increase of salary, I will not accept it. Do you hear, Katherine?—I won't accept it.
+   MRS. STOCKMANN:	You are quite right, Thomas.
+   ```
+3. Colon, multiline - mix of 1 and 2. Making character name all-caps is optional.
+   ```Latin
+   BILLING:
+   Hovstad, don't you think the town ought to give Dr. Stockmann some sort of testimonial?
+
+   HOVSTAD:
+   I will suggest it, anyway.
+
+   BILLING:
+   And I will speak to Aslaksen about it.
+
+   DR. STOCKMANN:
+   No, my good friends, don't let us have any of that nonsense. I won't hear anything of the kind. And if the Baths Committee should think of voting me an increase of salary, I will not accept it. Do you hear, Katherine?—I won't accept it.
+
+   MRS. STOCKMANN:
+   You are quite right, Thomas.
+   ```
+There are no capitals in Devanagari, so you must use colons.
 ```Devanagari
-आलोक: माँ, आप जाओ।
-आलोक:    माँ, आप जाओ।
+आलोक: यार, एक बात बता।
+ध्रुव: हाँ?
+आलोक: तूने कभी statues को बोलते हुए देखा है?
+ध्रुव: हाँ! जब इंसान को भूख लगती है ना, तो सब कुछ बोलता हुआ दिखता है! भाई मुझे बहुत भूख लगी है। तू घर जा, और मुझे भी जाने दे।
+आलोक: यार इतनी रात को अकेला ना छोड़ यार...वो भी इस statue के साथ!
+ध्रुव: तो क्या करेगा? घर तू जाएगा नहीं...ढाबे पे सोएगा?
+आलोक: बकवास मत कर।
+ध्रुव: अ...footpath पर सोएगा? आधा India वहाँ सोता है!
+आलोक: तू चुप कर यार!
+```
+
+...maybe with some whitespace for neatness.
+```Devanagari
+आलोक:	यार, एक बात बता।
+ध्रुव:	हाँ?
+आलोक: 	तूने कभी statues को बोलते हुए देखा है?
+ध्रुव: 	हाँ! जब इंसान को भूख लगती है ना, तो सब कुछ बोलता हुआ दिखता है! भाई मुझे बहुत भूख लगी है। तू घर जा, और मुझे भी जाने दे।
+आलोक: 	यार इतनी रात को अकेला ना छोड़ यार...वो भी इस statue के साथ!
+ध्रुव: 	तो क्या करेगा? घर तू जाएगा नहीं...ढाबे पे सोएगा?
+आलोक: 	बकवास मत कर।
+ध्रुव: 	अ...footpath पर सोएगा? आधा India वहाँ सोता है!
+आलोक: 	तू चुप कर यार!
+```
+
+Or use the other style.
+```Devanagari
+आलोक:
+यार, एक बात बता।
+
+ध्रुव:
+हाँ?
 
 आलोक:
-माँ, आप जाओ।
+तूने कभी statues को बोलते हुए देखा है?
+
+ध्रुव:
+हाँ! जब इंसान को भूख लगती है ना, तो सब कुछ बोलता हुआ दिखता है! भाई मुझे बहुत भूख लगी है। तू घर जा, और मुझे भी जाने दे।
+
+आलोक:
+यार इतनी रात को अकेला ना छोड़ यार...वो भी इस statue के साथ!
+
+ध्रुव:
+तो क्या करेगा? घर तू जाएगा नहीं...ढाबे पे सोएगा?
+
+आलोक:
+बकवास मत कर।
+
+ध्रुव:
+अ...footpath पर सोएगा? आधा India वहाँ सोता है!
+
+आलोक:
+तू चुप कर यार!
 ```
-NB - we _could_ do without colons in Devanagari - if a line followed by a blank line is treated as a character name. But I'm not too sure about it...maybe because it doesn't visually differentiate the character name?
+### Multi-line dialogues
+Once a character has been specified, we want it to apply to all following lines, until the next character is specified. But it's difficult to do without the colon.
+
+```
+KING (listening)
+I think I hear some one to the right of the grove. I must find out. (He walks and looks about.) Ah, here are hermit-girls, with watering-pots just big enough for them to handle. They are coming in this direction to water the young trees. They are charming!
+
+  The city maids, for all their pains,
+    Seem not so sweet and good;
+  Our garden blossoms yield to these
+    Flower-children of the wood.
+
+I will draw back into the shade and wait for them. (He stands, gazing toward them. Enter SHAKUNTALA, as described, and her two friends.)
+
+FIRST FRIEND
+It seems to me, dear, that Father Kanva cares more for the hermitage trees than he does for you. You are delicate as a jasmine blossom, yet he tells you to fill the trenches about the trees.
+```
 
 ## Stage directions
 Anything in parenthesis
