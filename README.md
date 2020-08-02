@@ -147,7 +147,20 @@ Comments
 2. A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
 
 ### Character groups
+Character groups in a dramatis personae are started with a blank line, the group name, a new line, and the member characters of the group as a (Markdown) list of character names.
 
+Blank lines between the list items can be used to group them further.
+
+An example -
+```Latin
+Characters on TV
+* Husband
+* Wife
+* Son
+
+* News anchor
+* News reporter
+```
 ## Premiere cast (optional)
 Actor: character 1, character 2
 
