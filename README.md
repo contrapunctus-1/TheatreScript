@@ -21,6 +21,7 @@
     - [Stage directions](#stage-directions)
         - [Inline](#inline)
         - [Separate](#separate)
+    - [Verse](#verse)
     - [Songs](#songs)
     - [Formatting](#formatting)
 - [License](#license)
@@ -170,6 +171,19 @@ I happened to be passing, and so—(looks into the dining-room). But you have co
 ### Separate
 ```Latin
 (SCENE.—DR. STOCKMANN'S sitting-room. It is evening. The room is plainly but neatly appointed and furnished.)
+```
+## Verse
+Indent lines with two or more spaces
+```
+  The meanest vesture glows
+    On beauty that enchants:
+  The lotus lovelier shows
+    Amid dull water-plants;
+
+  The moon in added splendour
+    Shines for its spot of dark;
+  Yet more the maiden slender
+    Charms in her dress of bark.
 ```
 ## Songs
 
