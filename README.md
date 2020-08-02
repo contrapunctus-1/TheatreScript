@@ -132,6 +132,20 @@ You may want to use square brackets everywhere, then, for consistency...
 [पड़ोसन २]
 ```
 
+Comments
+1. For some reason, I don't like the look of square brackets for this purpose. Can we replace them with, say, emphasis markup?
+   ```Devanagari
+   *आलोक शर्मा,* एक ग्यारवी कक्षा का छात्र
+   उसके स्वर्गवासी *दादा जी*
+   *साक्षी शर्मा,* उसकी माँ
+   *अरुण शर्मा,* उसके पिता
+   *धोबन*
+   *पड़ोसन १*
+   *पड़ोसन २*
+   ```
+   * Note that now we have to include the commas in the emphasis too, thanks to Markdown whitespace rules concerning whitespace. And fiddling with _those_ would be an even bigger tangle.
+2. A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
+
 ### Character groups
 
 ## Premiere cast (optional)
