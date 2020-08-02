@@ -31,21 +31,21 @@
 * Inspired by https://fountain.io and Markdown
 
 ## Goals
-* Don't look like markup (like Fountain and Markdown, unlike LaTeX) - printable as-is
-* Reuse existing conventions
-* Must support Devanagari
-* Design syntax to be forgiving of the writer's errors
+1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - printable as-is
+2. Reuse existing conventions
+3. Must support Devanagari
+4. Design syntax to be forgiving of the writer's errors
 
 ## Advantages
-* Can be read, edited, and written by non-technical users
-* No special editor required
-* Intended to support keywords in all languages (unlike Fountain)
-* Don't need to specify language in multi-script texts (damnit, LaTeX/XeLaTeX 😠)
+1. Can be read, edited, and written by non-technical users
+2. No special editor required
+3. Intended to support keywords in all languages (unlike Fountain)
+4. Don't need to specify language in multi-script texts (damnit, LaTeX/XeLaTeX 😠)
 
 ## Disadvantages
-* Can't define character name once to easily update all uses of it (unlike LaTeX+Thalie)
-* Not user-extensible (unlike LaTeX+Thalie)
-* no-syntax markup + m17n for keywords = more complexity for the compiler (unlike Fountain)
+1. Can't define character name once to easily update all uses of it (unlike LaTeX+Thalie)
+2. Not user-extensible (unlike LaTeX+Thalie)
+3. no-syntax markup + m17n for keywords = more complexity for the compiler (unlike Fountain)
 
 ## Notes
 * Line breaks preserved (like Fountain, unlike Markdown)
