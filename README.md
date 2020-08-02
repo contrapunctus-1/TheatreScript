@@ -171,3 +171,7 @@ I'd rather make a request - please do everything you can to help that dream come
 TheatreScript is released under your choice of [Unlicense](https://unlicense.org/) or the [WTFPL](http://www.wtfpl.net/).
 
 (See files [UNLICENSE](UNLICENSE) and [WTFPL](WTFPL)).
+
+<!-- Local Variables: -->
+<!-- eval: (progn (make-local-variable 'before-save-hook) (add-hook 'before-save-hook 'markdown-toc-refresh-toc)) -->
+<!-- End: -->
