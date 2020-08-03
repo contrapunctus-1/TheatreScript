@@ -178,6 +178,15 @@ Comments
    _पड़ोसन १_
    _पड़ोसन २_
    ```
+   ```Devanagari
+   _आलोक शर्मा_, एक ग्यारवी कक्षा का छात्र
+   उसके स्वर्गवासी _दादा जी_
+   _साक्षी शर्मा_, उसकी माँ
+   _अरुण शर्मा_, उसके पिता
+   _धोबन_
+   _पड़ोसन १_
+   _पड़ोसन २_
+   ```
    * Note that now we have to include the commas in the emphasis too, thanks to Markdown whitespace rules concerning whitespace. And fiddling with _those_ would be an even bigger tangle.
      + Only if using emphasis for character names everywhere. If you keep it to the places where the character name can't be determined automatically, it's okay.
    * A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
