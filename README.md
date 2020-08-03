@@ -34,11 +34,11 @@
 * Inspired by https://fountain.io and Markdown
 
 ## Goals
-1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - printable as-is
-2. Reuse existing conventions
-3. Must support Devanagari
-4. Design syntax to be forgiving of the writer's errors
-5. Minimize user effort and editing software requirements
+1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - be printable as-is
+2. Must support Devanagari
+3. Design syntax to be forgiving of the writer's errors
+   * scripts can be long and subtle errors can be difficult to spot
+4. Minimize user effort and editing software requirements
 
 ## Advantages
 1. Can be read, edited, and written by non-technical users
@@ -55,18 +55,6 @@
 * Line breaks preserved (like Fountain, unlike Markdown)
 * Soft-wrapping recommended.
 * Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a real problem, square brackets may be a viable alternative.
-* As an example of an alternative, this is the plain text style I've seen most often. Not a fan of the use of periods for delimiting character names.
-  ```
-  [Enter Jack.]
-
-  [Lane goes out.]
-
-  Algernon.  How are you, my dear Ernest?  What brings you up to town?
-
-  Jack.  Oh, pleasure, pleasure!  What else should bring one anywhere? Eating as usual, I see, Algy!
-
-  Algernon.  [Stiffly.]  I believe it is customary in good society to take some slight refreshment at five o'clock.  Where have you been since last Thursday?
-  ```
 
 ## TODO
 1. Dramatis personae - differentiate between just a character name (e.g. "Captain Horster") and a description line with no character name (e.g. "Men of various conditions and occupations, a few women, and a troop of schoolboys--the audience at a public meeting.")

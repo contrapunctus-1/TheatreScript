@@ -1,6 +1,21 @@
 # Discarded ideas
-## Character name and dialogue
-### "Colon, inline" style
+## Conventional syntax
+* Do not like the use of periods for character names
+* Would prefer to make character names all caps, when the writing script allows it.
+* Placing character names on the same line as the dialogue reduces ease of visual recognition; placing character names on their own line also increases space, which is good for as-is printing; actors use these spaces to write notes.
+```
+[Enter Jack.]
+
+[Lane goes out.]
+
+Algernon.  How are you, my dear Ernest?  What brings you up to town?
+
+Jack.  Oh, pleasure, pleasure!  What else should bring one anywhere? Eating as usual, I see, Algy!
+
+Algernon.  [Stiffly.]  I believe it is customary in good society to take some slight refreshment at five o'clock.  Where have you been since last Thursday?
+```
+
+## "Colon, inline" style for character name and dialogue
 Character name is followed by a colon and one or more whitespace characters, followed by the dialogue on the same line. Making character name all-caps is optional.
 * This is more compressed, but that can work against it - actors are frequently writing notes in their printed copies, so that extra space is useful!
 * Note - doesn't look good with long soft-wrapped lines, unless your editor supports soft-wrapping + soft-indenting them
