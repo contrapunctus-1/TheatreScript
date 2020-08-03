@@ -163,8 +163,9 @@ Comments
       CAPTAIN HORSTER
       Men of various conditions and occupations, a few women, and a troop of schoolboys--the audience at a public meeting.
       ```
-  2. The character name coming at the end of the line, e.g. "His late GRANDFATHER", or "उसके स्वर्गवासी _दादा जी_".
-3. For some reason, I don't like the look of square brackets for this purpose. Can we replace them with, say, emphasis markup?
+
+   2. The character name coming at the end of the line, e.g. "His late GRANDFATHER", or "उसके स्वर्गवासी _दादा जी_".
+2. For some reason, I don't like the look of square brackets for this purpose. Can we replace them with, say, emphasis markup?
    ```Devanagari
    आलोक शर्मा, एक ग्यारवी कक्षा का छात्र
    उसके स्वर्गवासी _दादा जी_
@@ -179,7 +180,7 @@ Comments
    * A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
    * Asterisks seem to add noise and don't really seem to emphasize (in plain text, without syntax highlighting); square brackets seem to suffer from the same problem; I'm liking underscores more, for these reasons.
    * Another issue is that now, the same syntax has different semantics in the Dramatis Personae vs the rest of the document. Inconsistencies like this make the syntax harder to learn.
-4. What if characters are list items, character groups are sub-lists, and the branch point of sub-lists is the character group name?
+3. What if characters are list items, character groups are sub-lists, and the branch point of sub-lists is the character group name?
 
    That would allow arbitrary text in the Dramatis Personae, which is often used to note the setting of the play. See the last paragraph in this example -
 
