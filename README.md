@@ -235,6 +235,9 @@ Comments
 
    The first four acts pass in Kanva's forest hermitage; acts five and six in the king's palace; act seven on a heavenly mountain. The time is perhaps seven years.
    ```
+4. If the lack of character 'variables' (a la LaTeX+Thalie) is a deal breaker, we could extend the markup to support character "short names" which can be used instead of character names; compilers could choose to replace one with the other (which could be desirable, or not), but if printing as-is, the short name would be used.
+
+   Of course, this complicates the markup and breaks the "printable as-is" goal, so I want to avoid it.
 #### Character groups
 Character groups in a dramatis personae are started with a blank line, the group name, a new line, and the member characters of the group as a (Markdown) list of character names.
 
