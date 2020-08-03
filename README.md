@@ -21,12 +21,16 @@
         - [Sections](#sections)
     - [Dialogues](#dialogues)
         - [Multi-line dialogues](#multi-line-dialogues)
+        - [Comments](#comments)
     - [Stage directions](#stage-directions)
         - [After the character name](#after-the-character-name)
         - [In the dialogue](#in-the-dialogue)
         - [Freestanding](#freestanding)
     - [Verse](#verse)
     - [Songs](#songs)
+        - [Introducing](#introducing)
+        - [Ending](#ending)
+        - [Comments](#comments-1)
     - [Formatting](#formatting)
 - [License](#license)
 
@@ -331,11 +335,13 @@ FIRST FRIEND
 It seems to me, dear, that Father Kanva cares more for the hermitage trees than he does for you. You are delicate as a jasmine blossom, yet he tells you to fill the trenches about the trees.
 ```
 
+### Comments
 But what if a character's dialogue happens to coincide with the syntax of a character name?
 * A hacky workaround could be to start that dialogue with a single space.
 * For the colon syntax, ensure that the line ends with a colon? That would cut down on collisons...
   + But still not eliminate them entirely 🤔
 * A word limit for character names could be used as a last resort.
+* What if it conflicts with the SONG: keyword?
 
 ## Stage directions
 Anything in parenthesis is displayed as stage directions.
@@ -376,7 +382,26 @@ Indent lines with two or more spaces
     Charms in her dress of bark.
 ```
 ## Songs
+Songs are [verse](#verse) blocks with a name.
+### Introducing
+Songs are introduced with the "SONG:" keyword.
+`SONG: Another Hundred People`
 
+Songs may be numbered automatically -
+`SONG #: Pretty Women`
+
+Or manually -
+`SONG #33: On The Steps of the Palace`
+
+For manual numbers, compilers may warn of irregularities in numbering, but note that songs may be numbered like '12, 12a, 13'.
+### Ending
+Songs end when
+1. We reach the end of the document
+2. We find a line saying "SONG END"/"SONG ENDS"/"END SONG"/"END OF SONG", or
+3. We reach the end of consecutive verse blocks, i.e. there is a dialogue or a stage direction.
+### Comments
+1. Not at ease with the idea of song blocks being interrupted by dialogues or stage directions. I can see why they might occur between a song.
+   * But if we only rely on ending the song with a keyword, that's unforgiving syntax 🤔
 ## Formatting
 ```
 *italic*
