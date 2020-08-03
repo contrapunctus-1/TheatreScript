@@ -123,19 +123,73 @@ You may want to use square brackets everywhere, then, for consistency...
 ```
 
 Comments
-1. For some reason, I don't like the look of square brackets for this purpose. Can we replace them with, say, emphasis markup?
+1. Notable special cases
+   1. In Devanagari, differentiating between a line containing only a character name (e.g. "धोबन") and a line containing only a description, with no name requiring emphasis (e.g. "पार्क में खलते बच्चे").
+
+      In Latin, it's resolved with capitals, e.g.
+      ```Latin
+      CAPTAIN HORSTER
+      Men of various conditions and occupations, a few women, and a troop of schoolboys--the audience at a public meeting.
+      ```
+  2. The character name coming at the end of the line, e.g. "His late GRANDFATHER", or "उसके स्वर्गवासी _दादा जी_".
+3. For some reason, I don't like the look of square brackets for this purpose. Can we replace them with, say, emphasis markup?
    ```Devanagari
-   *आलोक शर्मा,* एक ग्यारवी कक्षा का छात्र
-   उसके स्वर्गवासी *दादा जी*
-   *साक्षी शर्मा,* उसकी माँ
-   *अरुण शर्मा,* उसके पिता
-   *धोबन*
-   *पड़ोसन १*
-   *पड़ोसन २*
+   आलोक शर्मा, एक ग्यारवी कक्षा का छात्र
+   उसके स्वर्गवासी _दादा जी_
+   साक्षी शर्मा, उसकी माँ
+   अरुण शर्मा, उसके पिता
+   _धोबन_
+   _पड़ोसन १_
+   _पड़ोसन २_
    ```
    * Note that now we have to include the commas in the emphasis too, thanks to Markdown whitespace rules concerning whitespace. And fiddling with _those_ would be an even bigger tangle.
-2. A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
+     + Only if using emphasis for character names everywhere. If you keep it to the places where the character name can't be determined automatically, it's okay.
+   * A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
+   * Asterisks seem to add noise and don't really seem to emphasize (in plain text, without syntax highlighting); square brackets seem to suffer from the same problem; I'm liking underscores more, for these reasons.
+   * Another issue is that now, the same syntax has different semantics in the Dramatis Personae vs the rest of the document. Inconsistencies like this make the syntax harder to learn.
+4. What if characters are list items, character groups are sub-lists, and the branch point of sub-lists is the character group name?
 
+   That would allow arbitrary text in the Dramatis Personae, which is often used to note the setting of the play. See the last paragraph in this example -
+
+   ```Latin
+   * KING DUSHYANTA.
+   * BHARATA, nicknamed All-tamer, his son.
+   * MADHAVYA, a clown, his companion.
+   * His charioteer.
+   * RAIVATAKA, a door-keeper.
+   * BHADRASENA, a general.
+   * KARABHAKA, a servant.
+   * PARVATAYANA, a chamberlain.
+   * SOMARATA, a chaplain.
+
+   * KANVA, hermit-father.
+   * His pupils
+     + SHARNGARAVA
+     + SHARADVATA
+     + HARITA
+   * DURVASAS, an irascible sage.
+   * The chief of police.
+   * Policemen
+     + SUCHAKA
+     + JANUKA
+
+   * A fisherman.
+   * SHAKUNTALA, foster-child of Kanva.
+   * Her friends
+     + ANUSUVA
+     + PRIYAMVADA
+
+   * GAUTAMI, hermit-mother.
+   * KASHYAPA, father of the gods.
+   * ADITI, mother of the gods.
+   * MATALI, charioteer of heaven's king.
+   * GALAVA, a pupil in heaven.
+   * MISHRAKESHI, a heavenly nymph.
+
+   * Stage-director and actress (in the prologue), hermits and hermit-women, two court poets, palace attendants, invisible fairies.
+
+   The first four acts pass in Kanva's forest hermitage; acts five and six in the king's palace; act seven on a heavenly mountain. The time is perhaps seven years.
+   ```
 ### Character groups
 Character groups in a dramatis personae are started with a blank line, the group name, a new line, and the member characters of the group as a (Markdown) list of character names.
 
