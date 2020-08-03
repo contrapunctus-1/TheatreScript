@@ -9,14 +9,16 @@
     - [TODO](#todo)
     - [Tested with](#tested-with)
 - [Syntax](#syntax)
-    - [Headings](#headings)
-    - [Title page (optional)](#title-page-optional)
-    - [Dramatis personae](#dramatis-personae)
-        - [Characters](#characters)
-        - [Character groups](#character-groups)
-    - [Premiere cast (optional)](#premiere-cast-optional)
-    - [Outline (optional)](#outline-optional)
-    - [Sections](#sections)
+    - [Document structure](#document-structure)
+        - [Headings](#headings)
+        - [Title page](#title-page)
+        - [Dramatis personae](#dramatis-personae)
+            - [Characters](#characters)
+            - [Character groups](#character-groups)
+        - [Premiere cast (optional)](#premiere-cast-optional)
+        - [Outline (optional)](#outline-optional)
+        - [Body - the script itself](#body---the-script-itself)
+        - [Sections](#sections)
     - [Dialogues](#dialogues)
         - [Multi-line dialogues](#multi-line-dialogues)
     - [Stage directions](#stage-directions)
@@ -57,13 +59,25 @@
 * Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a real problem, square brackets may be a viable alternative.
 
 ## TODO
-1. Dramatis personae - differentiate between just a character name (e.g. "Captain Horster") and a description line with no character name (e.g. "Men of various conditions and occupations, a few women, and a troop of schoolboys--the audience at a public meeting.")
-   * it's possible with capitals in Latin ("CAPTAIN HORSTER" is a character name, the other line doesn't have capital words, so is just a description)...
-   * ...but that's not an option in Devanagari 🤔
-2. Title, dramatis personae, act, scene, song -  syntax for introducing these sections
+1. Title Page, Dramatis Personae, Act, Scene, Song -  syntax for introducing these sections
    + and m17n for their keywords
-3. Headings?
-4. Verse dramas
+   + We have some options.
+     1. Title Page, Dramatis Personae, Premiere Cast, Outline, and "Play" are represented by level 1 headings. Act and Scene are represented by level 2 and level 3 headings respectively.
+
+        ("Play" is a level 1 heading with the same title as the value of Title: on the Title Page. Act and Scene are only allowed as branches of that.)
+
+        The first level 1 heading is the title page (mandatory),
+        the second is the dramatis personae (mandatory?),
+        the third is the premiere cast (optional),
+        the fourth is the outline (optional),
+        the first level 1 heading after the mandatory headings, if it has the same title as the value of "Title" on the Title Page.
+        * This has the disadvantage of not allowing flexibility in the 'preamble' (the before the script itself begins)
+2. Verse dramas
+3. "As-is printing" vs soft-wrapping vs preserving newlines
+   * Both hard-wrapping and soft-wrapping seem to require special editor support.
+   * Hard-wrapped is ready to be printed; soft-wrapped is easier for reading on different screens (the classic dilemma...)
+   * Could let the user decide, with the compiler being able to convert between the two.
+4. Markdown has some cool ideas about reducing writer effort. Might be work looking into.
 5. [x] Do we need Fountain's Dual Dialogue?
    * I see it as limited - just two simultaneous speakers?
    * It also seems unnecessary - could just write "Both:" or "The three of them:" or "Foo, Bar and Quux:" 🤷‍♀
@@ -73,21 +87,39 @@
 2. https://www.gutenberg.org/cache/epub/844/pg844.txt
 
 # Syntax
-## Headings
+## Document structure
+### Headings
 Markdown's ATX headings. A line starting with one to seven # characters, followed by one or more whitespace characters, followed by at least one alphanumeric character, is a heading.
 ```
 # a heading
 ## another heading
 ```
 
-## Title page (optional)
-```
-Key: Value
-Key with spaces: Value
-```
-## Dramatis personae
+### Title page
+An optional title page can be started by the title, which is written using Markdown's setext-style level 1 heading.
+```Latin
+THE IMPORTANCE OF BEING EARNEST
+===============================
 
-### Characters
+A Trivial Comedy for Serious People
+
+Playwright: Oscar Wilde
+Key: Value
+Key with spaces: Value with spaces
+```
+Compilers could center everything on the title page (starting from title to the next heading)
+
+### Dramatis personae
+A level 1 heading with either the "Dramatis personae" keyword -
+`# Dramatis personae`
+
+Or the keyword followed by a colon and the actual heading you want - `# Dramatis personae: The persons of the play`
+
+Comments
+1. Not all works use the term "dramatis personae"
+2. If we assume that the first ATX heading in a file is the dramatis personae, we lose flexibility.
+
+#### Characters
 1. If there are `[square brackets]`, the text in the left-most pair is the character name
 2. Failing that, if there are `CONSECUTIVE UPPERCASE WORDS`, the left-most set is the character name
 3. Failing that, if there is a comma or parenthesis, the text before the left-most comma or opening parenthesis is the character name
@@ -190,7 +222,7 @@ Comments
 
    The first four acts pass in Kanva's forest hermitage; acts five and six in the king's palace; act seven on a heavenly mountain. The time is perhaps seven years.
    ```
-### Character groups
+#### Character groups
 Character groups in a dramatis personae are started with a blank line, the group name, a new line, and the member characters of the group as a (Markdown) list of character names.
 
 Blank lines between the list items can be used to group them further.
@@ -205,12 +237,13 @@ Characters on TV
 * News anchor
 * News reporter
 ```
-## Premiere cast (optional)
+### Premiere cast (optional)
 Actor: character 1, character 2
 
-## Outline (optional)
-## Sections
-Act, scene
+### Outline (optional)
+### Body - the script itself
+### Sections
+Act, Scene
 
 ## Dialogues
 There are two styles -
