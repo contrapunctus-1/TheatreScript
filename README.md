@@ -317,5 +317,5 @@ TheatreScript is released under your choice of [Unlicense](https://unlicense.org
 (See files [UNLICENSE](UNLICENSE) and [WTFPL](WTFPL)).
 
 <!-- Local Variables: -->
-<!-- eval: (progn (make-local-variable 'before-save-hook) (add-hook 'before-save-hook 'markdown-toc-refresh-toc)) -->
+<!-- eval: (save-excursion (make-local-variable 'before-save-hook) (add-hook 'before-save-hook 'markdown-toc-refresh-toc)) -->
 <!-- End: -->
