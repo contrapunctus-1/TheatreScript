@@ -333,6 +333,9 @@ It seems to me, dear, that Father Kanva cares more for the hermitage trees than 
 
 But what if a character's dialogue happens to coincide with the syntax of a character name?
 * A hacky workaround could be to start that dialogue with a single space.
+* For the colon syntax, ensure that the line ends with a colon? That would cut down on collisons...
+  + But still not eliminate them entirely 🤔
+* A word limit for character names could be used as a last resort.
 
 ## Stage directions
 Anything in parenthesis is displayed as stage directions.
