@@ -13,7 +13,7 @@
         - [Headings](#headings)
         - [Title page](#title-page)
         - [Dramatis personae](#dramatis-personae)
-            - [Characters](#characters)
+            - [Character names and descriptions](#character-names-and-descriptions)
             - [Character groups](#character-groups)
         - [Premiere cast (optional)](#premiere-cast-optional)
         - [Outline (optional)](#outline-optional)
@@ -117,13 +117,12 @@ Compilers could center everything on the title page (starting from title to the 
 A level 1 heading with either the "Dramatis personae" keyword -
 `# Dramatis personae`
 
-Or the keyword followed by a colon and the actual heading you want - `# Dramatis personae: The persons of the play`
+If you want to call it something other than "Dramatis Personae", make a heading with the actual text you want, followed by the keyword in parenthesis -
+`# The persons of the play (dramatis personae)`
 
-Comments
-1. Not all works use the term "dramatis personae"
-2. If we assume that the first ATX heading in a file is the dramatis personae, we lose flexibility.
+In the second example, compilers may choose to remove the parenthesized expression.
 
-#### Characters
+#### Character names and descriptions
 1. If there are `[square brackets]`, the text in the left-most pair is the character name
 2. Failing that, if there are `CONSECUTIVE UPPERCASE WORDS`, the left-most set is the character name
 3. Failing that, if there is a comma or parenthesis, the text before the left-most comma or opening parenthesis is the character name

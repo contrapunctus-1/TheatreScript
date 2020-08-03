@@ -15,6 +15,9 @@ Jack.  Oh, pleasure, pleasure!  What else should bring one anywhere? Eating as u
 Algernon.  [Stiffly.]  I believe it is customary in good society to take some slight refreshment at five o'clock.  Where have you been since last Thursday?
 ```
 
+## Assuming that a particular heading is the dramatis personae
+> If we assume that e.g. the first ATX heading in a file is the dramatis personae, we lose flexibility.
+
 ## "Colon, inline" style for character name and dialogue
 Character name is followed by a colon and one or more whitespace characters, followed by the dialogue on the same line. Making character name all-caps is optional.
 * This is more compressed, but that can work against it - actors are frequently writing notes in their printed copies, so that extra space is useful!
