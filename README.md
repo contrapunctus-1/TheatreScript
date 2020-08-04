@@ -115,9 +115,10 @@ A level 1 heading with either the "Dramatis personae" keyword -
 `# Dramatis personae`
 
 ...or, if you want to call it something other than "Dramatis Personae", make a heading with the actual text you want, followed by the keyword in parenthesis -
-
-`# The persons of the play (dramatis personae)`
-
+```
+# The persons of the play (dramatis personae)
+# Characters (dramatis personae)
+```
 In the second example, compilers may choose to remove the parenthesized expression.
 
 #### Character names and descriptions
