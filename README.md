@@ -41,7 +41,7 @@
 <!-- markdown-toc end -->
 
 # About
-* Inspired by https://fountain.io and Markdown
+* Inspired by [Fountain](https://fountain.io) and [Markdown](https://daringfireball.net/projects/markdown/)
 
 ## Goals
 1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - be printable as-is
@@ -64,7 +64,7 @@
 ## Notes
 * Line breaks preserved (like Fountain, unlike Markdown)
 * Soft-wrapping recommended.
-* Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a real problem, square brackets may be a viable alternative.
+* Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a dealbreaker, square brackets may be a viable alternative.
 
 ## TODO
 1. "As-is printing" vs soft-wrapping vs preserving newlines
@@ -81,7 +81,8 @@
 
 ## Tested with
 1. <https://en.wikisource.org/wiki/An_Enemy_of_the_People_(Ibsen)>
-2. https://www.gutenberg.org/cache/epub/844/pg844.txt
+2. [Wilde - The Importance of Being Earnest](https://www.gutenberg.org/cache/epub/844/pg844.txt)
+3. [Kalidas - Translations of Shakuntala and Other Works (tr. Ryder)](https://www.gutenberg.org/cache/epub/16659/pg16659.txt)
 
 # Syntax
 ## Document structure
