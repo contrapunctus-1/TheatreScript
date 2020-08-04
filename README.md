@@ -117,6 +117,8 @@ Key with spaces: Value with spaces
 ```
 Compilers could center everything on the title page (starting from title to the next heading)
 
+Indentation is permitted (even with the heading, unlike Markdown), e.g. for centering in plain text.
+
 ### Dramatis personae
 A level 1 heading with either the "Dramatis personae" keyword -
 
