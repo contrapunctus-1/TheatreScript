@@ -19,9 +19,10 @@
         - [Outline (optional)](#outline-optional)
         - [Body - the script itself](#body---the-script-itself)
         - [Sections](#sections)
+            - [Comments](#comments)
     - [Dialogues](#dialogues)
         - [Multi-line dialogues](#multi-line-dialogues)
-        - [Comments](#comments)
+        - [Comments](#comments-1)
     - [Stage directions](#stage-directions)
         - [After the character name](#after-the-character-name)
         - [In the dialogue](#in-the-dialogue)
@@ -30,7 +31,7 @@
     - [Songs](#songs)
         - [Introducing](#introducing)
         - [Ending](#ending)
-        - [Comments](#comments-1)
+        - [Comments](#comments-2)
     - [Formatting](#formatting)
     - [Keywords in other languages](#keywords-in-other-languages)
         - [हिंदी](#हिंदी)
@@ -261,8 +262,16 @@ Actor: character 1, character 2
 
 ### Outline (optional)
 ### Body - the script itself
+The body is introduced with either
+1. A level 1 heading with the same text as the title on the Title Page, or
+2. The last level 1 ATX heading of the document.
 ### Sections
-Act, Scene
+Acts are introduced by level 2 ATX headings in the Body.
+
+Scenes are introduced by level 3 ATX headings in the Body.
+
+#### Comments
+1. Can we use SEText style level 2 headings for Acts?
 
 ## Dialogues
 There are two styles -
