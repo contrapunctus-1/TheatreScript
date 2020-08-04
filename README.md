@@ -119,9 +119,11 @@ Compilers could center everything on the title page (starting from title to the 
 
 ### Dramatis personae
 A level 1 heading with either the "Dramatis personae" keyword -
+
 `# Dramatis personae`
 
-If you want to call it something other than "Dramatis Personae", make a heading with the actual text you want, followed by the keyword in parenthesis -
+...or, if you want to call it something other than "Dramatis Personae", make a heading with the actual text you want, followed by the keyword in parenthesis -
+
 `# The persons of the play (dramatis personae)`
 
 In the second example, compilers may choose to remove the parenthesized expression.
