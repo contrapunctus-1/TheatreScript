@@ -60,3 +60,18 @@ With some whitespace for neatness -
 ध्रुव: 	अ...footpath पर सोएगा? आधा India वहाँ सोता है!
 आलोक: 	तू चुप कर यार!
 ```
+
+## Fountain's [Dual Dialogue](https://fountain.io/syntax#section-dual)
+Example -
+```Fountain
+BRICK
+Screw retirement.
+
+STEEL ^
+Screw retirement.
+```
+
+Reasons -
+* I see it as limited - just two simultaneous speakers?
+* It seems unnecessary - could just write "Both:" or "The three of them:" or "Foo, Bar and Quux:" 🤷‍
+* While it's cool to see simultaneous dialogues columnized in the output, the caret doesn't, by itself, say that "these two dialogues are simultaneous" (unless the caret is some scriptwriting convention I'm not aware of, which is widespread outside of Fountain). Which breaks goal #1.

@@ -67,28 +67,17 @@
 * Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a real problem, square brackets may be a viable alternative.
 
 ## TODO
-1. Title Page, Dramatis Personae, Act, Scene, Song -  syntax for introducing these sections
-   + and m17n for their keywords
-   + We have some options.
-     1. Title Page, Dramatis Personae, Premiere Cast, Outline, and "Play" are represented by level 1 headings. Act and Scene are represented by level 2 and level 3 headings respectively.
+1. "As-is printing" vs soft-wrapping vs preserving newlines
+   * Editor support - both hard-wrapping and soft-wrapping seem to require it.
+   * Printing vs electronic reading - hard-wrapped is ready to be printed; soft-wrapped is easier for reading on different screens (classic dilemma...)
+   * Could let the user decide, with the compiler being able to convert between the two (including hard-wrapping to a certain width).
+2. Markdown has some cool ideas about reducing writer effort. Might be work looking into.
+3. Do we really need to preserve newlines?
+   * Is it necessary outside of poetry?
 
-        ("Play" is a level 1 heading with the same title as the value of Title: on the Title Page. Act and Scene are only allowed as branches of that.)
-
-        The first level 1 heading is the title page (mandatory),
-        the second is the dramatis personae (mandatory?),
-        the third is the premiere cast (optional),
-        the fourth is the outline (optional),
-        the first level 1 heading after the mandatory headings, if it has the same title as the value of "Title" on the Title Page.
-        * This has the disadvantage of not allowing flexibility in the 'preamble' (the before the script itself begins)
-2. Verse dramas
-3. "As-is printing" vs soft-wrapping vs preserving newlines
-   * Both hard-wrapping and soft-wrapping seem to require special editor support.
-   * Hard-wrapped is ready to be printed; soft-wrapped is easier for reading on different screens (the classic dilemma...)
-   * Could let the user decide, with the compiler being able to convert between the two.
-4. Markdown has some cool ideas about reducing writer effort. Might be work looking into.
-5. [x] Do we need Fountain's Dual Dialogue?
-   * I see it as limited - just two simultaneous speakers?
-   * It also seems unnecessary - could just write "Both:" or "The three of them:" or "Foo, Bar and Quux:" 🤷‍♀
+     My most annoying experience in working with with markup that doesn't (e.g. Markdown) is when trying to write poetry. But that's easily handled with our verse syntax.
+4. An idea - anything that is indented gets center aligned by compilers.
+   * An interesting way to deduce user intent, and introduce center alignment, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
 
 ## Tested with
 1. <https://en.wikisource.org/wiki/An_Enemy_of_the_People_(Ibsen)>
