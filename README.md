@@ -32,6 +32,9 @@
         - [Ending](#ending)
         - [Comments](#comments-1)
     - [Formatting](#formatting)
+    - [Keywords in other languages](#keywords-in-other-languages)
+        - [हिंदी](#हिंदी)
+        - [Keyword language detection](#keyword-language-detection)
 - [License](#license)
 
 <!-- markdown-toc end -->
@@ -425,6 +428,16 @@ Songs end when
 _underline_
 ~strikethrough~
 ```
+## Keywords in other languages
+I would like for users to suggest possible synonyms for all keywords, in the language they'd like to see supported.
+
+### हिंदी
+ Keywords | Synonyms
+----------|--------
+SONG      | गीत, गाना
+"SONG END"/"SONG ENDS"/"END SONG"/"END OF SONG" | "गीत समाप्त"/"गाना समाप्त"
+
+### Keyword language detection
 
 # License
 I dream of a world where all software is liberated - transparent, trustable, and accessible for anyone to use or improve. But I don't want to make demands or threats (e.g. via legal conditions) to get there.
