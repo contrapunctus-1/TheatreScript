@@ -130,6 +130,7 @@ In the second example, compilers may choose to remove the parenthesized expressi
 
 #### Character names and descriptions
 1. If there are `[square brackets]`, the text in the left-most pair is the character name
+   * contentious, see comments
 2. Failing that, if there are `CONSECUTIVE UPPERCASE WORDS`, the left-most set is the character name
 3. Failing that, if there is a comma or parenthesis, the text before the left-most comma or opening parenthesis is the character name
 4. Failing that, there is no character name; the whole line is the the character _description_
@@ -198,7 +199,19 @@ Comments
    * A solution relying on blank lines wouldn't do, because those are useful for separating characters into groups.
    * Asterisks seem to add noise and don't really seem to emphasize (in plain text, without syntax highlighting); square brackets seem to suffer from the same problem; I'm liking underscores more, for these reasons.
    * Another issue is that now, the same syntax has different semantics in the Dramatis Personae vs the rest of the document. Inconsistencies like this make the syntax harder to learn.
-3. What if characters are list items, character groups are sub-lists, and the branch point of sub-lists is the character group name?
+3. A hack which could decrease the use of square brackets/underscores in a common situation - we subtly abuse the rule about the comma. Of course, this is at the expense of consistent appearance.
+   ```Devanagari
+   आलोक शर्मा, एक ग्यारवी कक्षा का छात्र
+   उसके स्वर्गवासी _दादा जी_
+   साक्षी शर्मा, उसकी माँ
+   अरुण शर्मा, उसके पिता
+   धोबन,
+   पड़ोसन १,
+   पड़ोसन २,
+   ```
+   * What if we stop supporting the rather uncommon case of highlighting an unnamed character in Devanagari?
+   * We could even get by with not highlighting character names in lines not matching the comma/parenthesis rule - such lines are usually for minor characters.
+4. What if characters are list items, character groups are sub-lists, and the branch point of sub-lists is the character group name?
 
    That would allow arbitrary text in the Dramatis Personae, which is often used to note the setting of the play. See the last paragraph in this example -
 
@@ -241,7 +254,7 @@ Comments
 
    The first four acts pass in Kanva's forest hermitage; acts five and six in the king's palace; act seven on a heavenly mountain. The time is perhaps seven years.
    ```
-4. If the lack of character 'variables' (a la LaTeX+Thalie) is a deal breaker, we could extend the markup to support character "short names" which can be used instead of character names; compilers could choose to replace one with the other (which could be desirable, or not), but if printing as-is, the short name would be used.
+5. If the lack of character 'variables' (a la LaTeX+Thalie) is a deal breaker, we could extend the markup to support character "short names" which can be used instead of character names; compilers could choose to replace one with the other (which could be desirable, or not), but if printing as-is, the short name would be used.
 
    Of course, this complicates the markup and breaks the "printable as-is" goal, so I want to avoid it.
 #### Character groups
