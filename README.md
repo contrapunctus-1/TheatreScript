@@ -393,23 +393,27 @@ Indent lines with two or more spaces
     Charms in her dress of bark.
 ```
 ## Songs
-Songs are [verse](#verse) blocks with a name.
+Songs are [verse](#verse) blocks with a number and/or name.
+
 ### Introducing
-Songs are introduced with the "SONG:" keyword.
-`SONG: Another Hundred People`
+Songs are introduced with the "SONG" keyword (capitalization mandatory).
 
-Songs may be numbered automatically -
-`SONG #: Pretty Women`
+They must be either named or numbered, but can also be both.
 
-Or manually -
-`SONG #33: On The Steps of the Palace`
+```
+SONG: Another Hundred People
+SONG #2
+SONG #33: On The Steps of the Palace
+```
 
-For manual numbers, compilers may warn of irregularities in numbering, but note that songs may be numbered like '12, 12a, 13'.
+Compilers may warn of irregularities in numbering, but note that songs may be numbered like '12, 12a, 13'.
+
 ### Ending
 Songs end when
 1. We reach the end of the document
 2. We find a line saying "SONG END"/"SONG ENDS"/"END SONG"/"END OF SONG", or
 3. We reach the end of consecutive verse blocks, i.e. there is a dialogue or a stage direction.
+
 ### Comments
 1. Not at ease with the idea of song blocks being interrupted by dialogues or stage directions. I can see why they might occur between a song.
    * But if we only rely on ending the song with a keyword, that's unforgiving syntax 🤔

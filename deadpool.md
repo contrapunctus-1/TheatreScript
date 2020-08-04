@@ -1,4 +1,11 @@
 # Discarded ideas
+## Automatic numbering of songs
+Example -
+
+`SONG #: Epiphany`
+
+Reason - not printable as-is (goal #1)
+
 ## Conventional syntax
 * Do not like the use of periods for character names
 * Would prefer to make character names all caps, when the writing script allows it.
