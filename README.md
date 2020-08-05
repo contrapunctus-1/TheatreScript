@@ -268,10 +268,26 @@ Actor: character 1, character 2
 The body is introduced with either
 1. A level 1 heading with the same text as the title on the Title Page, or
 2. The last level 1 ATX heading of the document.
-### Sections
-Acts are introduced by level 2 ATX headings in the Body.
+### Acts and scenes
+Acts are introduced by level 2 ATX headings in the Body, with the keyword "ACT". They may be numbered, named, or both.
 
-Scenes are introduced by level 3 ATX headings in the Body.
+```
+## ACT
+## ACT 1
+## ACT: Name
+## ACT 1: Name
+```
+
+Scenes are introduced by level 3 ATX headings in the Body, with the keyword "SCENE". Like acts, they too may be numbered, named, or both.
+
+```
+### SCENE
+### SCENE 1
+### SCENE: Name
+### SCENE 1: Name
+```
+
+It is recommended that compilers and editors warn of numbering mistakes. Advanced editors could even autocorrect them.
 
 #### Comments
 1. Can we use SEText style level 2 headings for Acts?
