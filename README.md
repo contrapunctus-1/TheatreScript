@@ -1,47 +1,5 @@
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [About](#about)
-    - [Goals](#goals)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
-    - [Notes](#notes)
-    - [TODO](#todo)
-    - [Tested with](#tested-with)
-- [Syntax](#syntax)
-    - [Document structure](#document-structure)
-        - [Headings](#headings)
-        - [Title page](#title-page)
-        - [Dramatis personae](#dramatis-personae)
-            - [Character names and descriptions](#character-names-and-descriptions)
-            - [Character groups](#character-groups)
-        - [Premiere cast (optional)](#premiere-cast-optional)
-        - [Outline (optional)](#outline-optional)
-        - [Body - the script itself](#body---the-script-itself)
-        - [Sections](#sections)
-            - [Comments](#comments)
-    - [Dialogues](#dialogues)
-        - [Multi-line dialogues](#multi-line-dialogues)
-        - [Comments](#comments-1)
-    - [Stage directions](#stage-directions)
-        - [After the character name](#after-the-character-name)
-        - [In the dialogue](#in-the-dialogue)
-        - [Freestanding](#freestanding)
-    - [Verse](#verse)
-    - [Songs](#songs)
-        - [Introducing](#introducing)
-        - [Ending](#ending)
-        - [Comments](#comments-2)
-    - [Formatting](#formatting)
-    - [Keywords in other languages](#keywords-in-other-languages)
-        - [हिंदी](#हिंदी)
-        - [Keyword language detection](#keyword-language-detection)
-- [License](#license)
-
-<!-- markdown-toc end -->
-
-# About
-* Inspired by [Fountain](https://fountain.io) and [Markdown](https://daringfireball.net/projects/markdown/)
+# TheatreScript
+A markup language for theatre (drama) scripts, inspired by [Fountain](https://fountain.io) and [Markdown](https://daringfireball.net/projects/markdown/)
 
 ## Goals
 1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - be printable as-is
@@ -62,22 +20,60 @@
 3. no-syntax markup + m17n for keywords = more complexity for the compiler (unlike Fountain)
 
 ## TODO
-1. "As-is printing" vs soft-wrapping vs preserving newlines
+1. Think of a new name?
+2. "As-is printing" vs soft-wrapping vs preserving newlines
    * Editor support - both hard-wrapping and soft-wrapping seem to require it.
    * Printing vs electronic reading - hard-wrapped is ready to be printed; soft-wrapped is easier for reading on different screens (classic dilemma...)
    * Could let the user decide, with the compiler being able to convert between the two (including hard-wrapping to a certain width).
-2. Markdown has some cool ideas about reducing writer effort. Might be work looking into.
-3. Do we really need to preserve newlines?
+3. Markdown has some cool ideas about reducing writer effort. Might be work looking into.
+4. Do we really need to preserve newlines?
    * Is it necessary outside of poetry?
 
      My most annoying experience in working with with markup that doesn't (e.g. Markdown) is when trying to write poetry. But that's easily handled with our verse syntax.
-4. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
+5. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
    * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
 
-## Tested with
-1. <https://en.wikisource.org/wiki/An_Enemy_of_the_People_(Ibsen)>
-2. [Wilde - The Importance of Being Earnest](https://www.gutenberg.org/cache/epub/844/pg844.txt)
-3. [Kalidas - Translations of Shakuntala and Other Works (tr. Ryder)](https://www.gutenberg.org/cache/epub/16659/pg16659.txt)
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [TheatreScript](#theatrescript)
+    - [Goals](#goals)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+    - [TODO](#todo)
+- [Syntax](#syntax)
+    - [Document structure](#document-structure)
+        - [Headings](#headings)
+        - [Title page](#title-page)
+- [THE IMPORTANCE OF BEING EARNEST](#the-importance-of-being-earnest)
+    - [-](#-)
+        - [Character names and descriptions](#character-names-and-descriptions)
+        - [Character groups](#character-groups)
+        - [Premiere cast (optional)](#premiere-cast-optional)
+        - [Outline (optional)](#outline-optional)
+        - [Body - the script itself](#body---the-script-itself)
+        - [Acts and scenes](#acts-and-scenes)
+            - [Comments](#comments)
+    - [Dialogues](#dialogues)
+        - [Multi-line dialogues](#multi-line-dialogues)
+        - [Comments](#comments-1)
+    - [Stage directions](#stage-directions)
+        - [After the character name](#after-the-character-name)
+        - [In the dialogue](#in-the-dialogue)
+        - [Freestanding](#freestanding)
+        - [Comments](#comments-2)
+    - [Verse](#verse)
+    - [Songs](#songs)
+        - [Introducing](#introducing)
+        - [Ending](#ending)
+        - [Comments](#comments-3)
+    - [Formatting](#formatting)
+    - [Keywords in other languages](#keywords-in-other-languages)
+        - [हिंदी](#हिंदी)
+        - [Keyword language detection](#keyword-language-detection)
+- [License](#license)
+
+<!-- markdown-toc end -->
 
 # Syntax
 ## Document structure
