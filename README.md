@@ -34,6 +34,14 @@ A markup language for theatre (drama) scripts, inspired by [Fountain](https://fo
 5. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
    * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
 
+## Contribute
+Suggestions for the following are welcome.
+1. changes to the name
+2. additions or changes to, or removals from, the syntax
+3. keywords for your language (see [Keywords in other languages](#keywords-in-other-languages))
+
+Check the [TODO](#todo) as well as headings named "Comments" for areas where I would appreciate feedback.
+
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
@@ -42,6 +50,7 @@ A markup language for theatre (drama) scripts, inspired by [Fountain](https://fo
     - [Advantages](#advantages)
     - [Disadvantages](#disadvantages)
     - [TODO](#todo)
+    - [Contribute](#contribute)
 - [Syntax](#syntax)
     - [Document structure](#document-structure)
         - [Headings](#headings)
