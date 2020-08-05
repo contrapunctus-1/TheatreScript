@@ -71,8 +71,8 @@
    * Is it necessary outside of poetry?
 
      My most annoying experience in working with with markup that doesn't (e.g. Markdown) is when trying to write poetry. But that's easily handled with our verse syntax.
-4. An idea - anything that is indented gets center aligned by compilers.
-   * An interesting way to deduce user intent, and introduce center alignment, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
+4. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
+   * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
 
 ## Tested with
 1. <https://en.wikisource.org/wiki/An_Enemy_of_the_People_(Ibsen)>
