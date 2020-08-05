@@ -61,11 +61,6 @@
 2. Not user-extensible (unlike LaTeX+Thalie)
 3. no-syntax markup + m17n for keywords = more complexity for the compiler (unlike Fountain)
 
-## Notes
-* Line breaks preserved (like Fountain, unlike Markdown)
-* Soft-wrapping recommended.
-* Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a dealbreaker, square brackets may be a viable alternative.
-
 ## TODO
 1. "As-is printing" vs soft-wrapping vs preserving newlines
    * Editor support - both hard-wrapping and soft-wrapping seem to require it.
@@ -399,6 +394,9 @@ I happened to be passing, and so—(looks into the dining-room). But you have co
 ```Latin
 (SCENE.—DR. STOCKMANN'S sitting-room. It is evening. The room is plainly but neatly appointed and furnished.)
 ```
+### Comments
+* Parenthesis for stage directions may conflict with writers wishing to use parenthesis in dialogues...if it becomes a dealbreaker, square brackets may be a viable alternative.
+
 ## Verse
 Indent lines with two or more spaces
 ```
