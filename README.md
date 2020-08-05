@@ -159,7 +159,7 @@ You may want to use square brackets everywhere, then, for consistency...
 
 Comments
 1. Notable special cases
-   1. In Devanagari, differentiating between a line containing only a character name (e.g. "धोबन") and a line containing only a description, with no name requiring emphasis (e.g. "पार्क में खलते बच्चे").
+   1. In Devanagari, differentiating between a line containing only a character name (e.g. "धोबन") and a line containing only a description, with no name requiring emphasis (e.g. "पार्क में खेलते बच्चे").
 
       In Latin, it's resolved with capitals, e.g.
       ```Latin
