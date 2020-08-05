@@ -2,11 +2,12 @@
 A markup language for theatre (drama) scripts, inspired by [Fountain](https://fountain.io) and [Markdown](https://daringfireball.net/projects/markdown/)
 
 ## Goals
+(in decreasing order of priority)
 1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - be printable as-is
-2. Must support Devanagari
-3. Design syntax to be forgiving of the writer's errors
+2. Support non-Latin scripts (e.g. Devanagari) and non-English languages
+3. Minimize user effort and editing software requirements
+4. Design syntax to be forgiving of the writer's errors
    * scripts can be long and subtle errors can be difficult to spot
-4. Minimize user effort and editing software requirements
 
 ## Advantages
 1. Can be read, edited, and written by non-technical users
