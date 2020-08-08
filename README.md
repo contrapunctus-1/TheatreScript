@@ -67,19 +67,20 @@ Check the [TODO](#todo) as well as headings named "Comments" for areas where I w
         - [Body - the script itself](#body---the-script-itself)
         - [Acts and scenes](#acts-and-scenes)
             - [Comments](#comments)
+        - [Comments](#comments-1)
     - [Dialogues](#dialogues)
         - [Multi-line dialogues](#multi-line-dialogues)
-        - [Comments](#comments-1)
+        - [Comments](#comments-2)
     - [Stage directions](#stage-directions)
         - [After the character name](#after-the-character-name)
         - [In the dialogue](#in-the-dialogue)
         - [Freestanding](#freestanding)
-        - [Comments](#comments-2)
+        - [Comments](#comments-3)
     - [Verse](#verse)
     - [Songs](#songs)
         - [Introducing](#introducing)
         - [Ending](#ending)
-        - [Comments](#comments-3)
+        - [Comments](#comments-4)
     - [Formatting](#formatting)
     - [Keywords in other languages](#keywords-in-other-languages)
         - [हिंदी](#हिंदी)
@@ -273,6 +274,8 @@ Characters on TV
 Actor: character 1, character 2
 
 ### Outline (optional)
+"The scenes of the play"
+
 ### Body - the script itself
 The body is introduced with either
 1. A level 1 heading with the same text as the title on the Title Page, or
@@ -300,6 +303,34 @@ It is recommended that compilers and editors warn of numbering mistakes. Advance
 
 #### Comments
 1. Can we use SEText style level 2 headings for Acts?
+2. Not all plays use acts as a unit - some use only scenes. Maybe allow scenes to be second level headings too?
+
+### Comments
+1. Currently, the script/body is a heading, containing acts and scenes as subheadings. The document structure looks like this -
+   ```
+   title page*
+   dramatis personae*
+   premiere cast*
+   outline*
+   body
+   - act 1
+     - scene 1
+     - ...
+   - act 2
+   - ...
+   ```
+   What if the script was not a separate section - the first act or scene declaration began it, and the structure looked like this instead?
+   ```
+   title page*
+   dramatis personae*
+   premiere cast*
+   outline*
+   act 1
+   - scene 1
+   - ...
+   act 2
+   - ...
+   ```
 
 ## Dialogues
 There are two styles -
