@@ -4,7 +4,7 @@ Example -
 
 `SONG #: Epiphany`
 
-Reason - not printable as-is (goal #1)
+Reason - not printable as-is (goal 1.1)
 
 ## Conventional syntax
 * Do not like the use of periods for character names
@@ -74,4 +74,4 @@ Screw retirement.
 Reasons -
 * I see it as limited - just two simultaneous speakers?
 * It seems unnecessary - could just write "Both:" or "The three of them:" or "Foo, Bar and Quux:" 🤷‍
-* While it's cool to see simultaneous dialogues columnized in the output, the caret doesn't, by itself, say that "these two dialogues are simultaneous" (unless the caret is some scriptwriting convention I'm not aware of, which is widespread outside of Fountain). Which breaks goal #1.
+* While it's cool to see simultaneous dialogues columnized in the output, the caret doesn't, by itself, say that "these two dialogues are simultaneous" (unless the caret is some scriptwriting convention I'm not aware of, which is widespread outside of Fountain). Which breaks goal 1.1 (printable as-is).

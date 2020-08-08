@@ -1,12 +1,14 @@
 # TheatreScript
-A markup language for theatre (drama) scripts, inspired by [Fountain](https://fountain.io) and [Markdown](https://daringfireball.net/projects/markdown/)
+A markup language for theatre scripts, inspired by [Fountain](https://fountain.io) and [Markdown](https://daringfireball.net/projects/markdown/)
 
 ## Goals
 (in decreasing order of priority)
-1. Don't look like markup (like Fountain and Markdown, unlike LaTeX) - be printable as-is
+1. Make it easy for non-technical users to learn, read, edit, and write
+   1. Don't look like markup - be printable as-is (like Fountain/Markdown, unlike LaTeX)
+   2. Minimize syntax and semantic edge cases
+   3. Minimize user effort as well as editing software requirements
 2. Support non-Latin scripts (e.g. Devanagari) and non-English languages
-3. Minimize user effort and editing software requirements
-4. Design syntax to be forgiving of the writer's errors
+3. Design syntax to be forgiving of the writer's errors
    * scripts can be long and subtle errors can be difficult to spot
 
 ## Advantages
@@ -249,7 +251,7 @@ Comments
    ```
 5. If the lack of character 'variables' (a la LaTeX+Thalie) is a deal breaker, we could extend the markup to support character "short names" which can be used instead of character names; compilers could choose to replace one with the other (which could be desirable, or not), but if printing as-is, the short name would be used.
 
-   Of course, this complicates the markup and breaks the "printable as-is" goal, so I want to avoid it.
+   Of course, this complicates the markup and breaks goal 1.1 (printable as-is), so I want to avoid it.
 #### Character groups
 Character groups in a dramatis personae are started with a blank line, the group name, a new line, and the member characters of the group as a (Markdown) list of character names.
 
