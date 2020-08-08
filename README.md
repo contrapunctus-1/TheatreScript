@@ -28,13 +28,15 @@ A markup language for theatre scripts, inspired by [Fountain](https://fountain.i
    * Editor support - both hard-wrapping and soft-wrapping seem to require it.
    * Printing vs electronic reading - hard-wrapped is ready to be printed; soft-wrapped is easier for reading on different screens (classic dilemma...)
    * Could let the user decide, with the compiler being able to convert between the two (including hard-wrapping to a certain width).
-3. Markdown has some cool ideas about reducing writer effort. Might be work looking into.
+3. Markdown has some cool ideas about reducing writer effort. Might be worth looking into.
 4. Do we really need to preserve newlines?
    * Is it necessary outside of poetry?
 
      My most annoying experience in working with with markup that doesn't (e.g. Markdown) is when trying to write poetry. But that's easily handled with our verse syntax.
 5. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
    * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
+6. Do we add link syntax? Image links? Comments?
+   * The last two always seemed to break goal 1.1 (printable as-is) for me, even in Markdown.
 
 ## Contribute
 Suggestions for the following are welcome.
