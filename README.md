@@ -28,6 +28,7 @@ A markup language for theatre scripts, inspired by [Fountain](https://fountain.i
 ### Implementation
 1. [ ] Write a parser
 2. Add to [CommonDoc](https://commondoc.github.io/)/[pandocl](https://github.com/CommonDoc/pandocl) as a format
+3. Make plugins for editors
 
 ### Syntax
 1. [ ] Test by converting existing scripts to TheatreScript, to expose limitations in syntax.
@@ -42,8 +43,23 @@ A markup language for theatre scripts, inspired by [Fountain](https://fountain.i
      Writing poetry has been my most annoying experience in working with markup that doesn't preserve newlines (e.g. Markdown). But that's easily handled with our verse syntax.
 5. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
    * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK. And yet, I don't feel entirely at ease with it 🤔
+   * Let's decide this _after_ we can compile to other formats.
 6. Do we add link syntax? Image links? Comments?
    * The last two always seemed to break goal 1.1 (printable as-is) for me, even in Markdown.
+7. New syntax for scene descriptions? e.g. (Gutenberg convention)
+   ```
+   SCENE
+
+   Morning-room in Algernon's flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.
+   ```
+   or, another possibility
+   ```
+   Scene - morning-room in Algernon's flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.
+   ```
+   or (don't like this -  conflicts with stage directions)
+   ```
+   (Scene - morning-room in Algernon's flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room.)
+   ```
 
 ## Contribute
 Suggestions for the following are welcome.
@@ -130,7 +146,7 @@ A level 1 heading with either the "Dramatis personae" keyword -
 
 ...or, if you want to call it something other than "Dramatis Personae", make a heading with the actual text you want, followed by the keyword in parenthesis -
 ```
-# The persons of the play (dramatis personae)
+# The persons in the play (dramatis personae)
 # Characters (dramatis personae)
 ```
 In the second example, compilers may choose to remove the parenthesized expression.
@@ -313,6 +329,7 @@ It is recommended that compilers and editors warn of numbering mistakes. Advance
 #### Comments
 1. Can we use SEText style level 2 headings for Acts?
 2. Not all plays use acts as a unit - some use only scenes. Maybe allow scenes to be second level headings too?
+3. After testing with an actual script, I'm not sure I like ATX headings very much, for acts and scenes.
 
 ### Comments
 1. Currently, the script/body is a heading, containing acts and scenes as subheadings. The document structure looks like this -
