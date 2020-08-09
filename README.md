@@ -24,17 +24,24 @@ A markup language for theatre scripts, inspired by [Fountain](https://fountain.i
 
 ## TODO
 1. Think of a new name?
+
+### Implementation
+1. [ ] Write a parser
+2. Add to [CommonDoc](https://commondoc.github.io/)/[pandocl](https://github.com/CommonDoc/pandocl) as a format
+
+### Syntax
+1. [ ] Test by converting existing scripts to TheatreScript, to expose limitations in syntax.
 2. "As-is printing" vs soft-wrapping vs preserving newlines
-   * Editor support - both hard-wrapping and soft-wrapping seem to require it.
+   * Editor support - both hard-wrapping and soft-wrapping seem to require it. Hard-wrapping by hand seems as painful as reading long lines in a non-wrapping editor or viewer.
    * Printing vs electronic reading - hard-wrapped is ready to be printed; soft-wrapped is easier for reading on different screens (classic dilemma...)
    * Could let the user decide, with the compiler being able to convert between the two (including hard-wrapping to a certain width).
 3. Markdown has some cool ideas about reducing writer effort. Might be worth looking into.
 4. Do we really need to preserve newlines?
    * Is it necessary outside of poetry?
 
-     My most annoying experience in working with with markup that doesn't (e.g. Markdown) is when trying to write poetry. But that's easily handled with our verse syntax.
+     Writing poetry has been my most annoying experience in working with markup that doesn't preserve newlines (e.g. Markdown). But that's easily handled with our verse syntax.
 5. An idea - anything that is indented either gets center-aligned, or centered (but still left aligned) by compilers.
-   * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK.
+   * An interesting way to deduce user intent, and introduce additional control, both in the source and in the output. Fits nicely with our verse syntax, which is usually centered, AFAIK. And yet, I don't feel entirely at ease with it 🤔
 6. Do we add link syntax? Image links? Comments?
    * The last two always seemed to break goal 1.1 (printable as-is) for me, even in Markdown.
 
@@ -54,8 +61,10 @@ Check the [TODO](#todo) as well as headings named "Comments" for areas where I w
     - [Advantages](#advantages)
     - [Disadvantages](#disadvantages)
     - [TODO](#todo)
+        - [Implementation](#implementation)
+        - [Syntax](#syntax)
     - [Contribute](#contribute)
-- [Syntax](#syntax)
+- [Syntax](#syntax-1)
     - [Document structure](#document-structure)
         - [Headings](#headings)
         - [Title page](#title-page)
